@@ -20,8 +20,7 @@ Capybara.javascript_driver = :selenium
 # Waittime for find()
 Capybara.default_wait_time = 30
 
-#Import sauceaccess
-`source .sauceaccess`
+
 
 
 

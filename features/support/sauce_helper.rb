@@ -1,7 +1,7 @@
 # Use Capybara integration
 require "sauce"
 require 'sauce/capybara'
-require "sauce/cucumber"
+#require "sauce/cucumber"
 
 Capybara.default_driver = :sauce
 
