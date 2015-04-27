@@ -6,7 +6,7 @@ module MyWorld
     @user ||= User.new
   end
   def magento
-    @magento ||=MagentoAPI.new($backendurl,ENV['MAGENTO_USERNAME'],ENV['MAGENTO_PASSWORD'])
+    @magento ||=MagentoAPI.new('http://magentointce.emmos.de',ENV['MAGENTO_USERNAME'],ENV['MAGENTO_PASSWORD'])
   end
   def vat
     @vat = 0.19
@@ -18,10 +18,10 @@ module MyWorld
   	end
   end
   def urlHttp
-    @urlHttp = $shopurl
+    @urlHttp = 'http://intcewga.emmos.de/'
   end
   def urlHttps
-    @urlHttps = $secure_shopurl
+    @urlHttps = 'https://intcewga.emmos.de/'
   end
 end
 
