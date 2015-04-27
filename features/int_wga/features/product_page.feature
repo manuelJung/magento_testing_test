@@ -1,5 +1,4 @@
 @product_page
-@selenium
 Feature: product page
 
 	As a customer,

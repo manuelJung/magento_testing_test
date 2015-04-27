@@ -1,5 +1,4 @@
 @checkout
-@selenium
 Feature: checkout
 
 	As a customer,

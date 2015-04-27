@@ -1,5 +1,4 @@
 @direct_ordering
-@selenium
 Feature: direct ordering
 
 	As a customer

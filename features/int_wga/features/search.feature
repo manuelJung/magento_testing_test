@@ -1,5 +1,4 @@
 @search
-@selenium
 Feature: search
 
 	As a customer

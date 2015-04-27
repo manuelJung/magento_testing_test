@@ -1,5 +1,4 @@
 @registration
-@selenium
 Feature: registration
 
 	As a customer,

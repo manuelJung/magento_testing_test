@@ -1,5 +1,4 @@
 @product_cart
-@selenium
 Feature: product cart
 
 	As a customer
