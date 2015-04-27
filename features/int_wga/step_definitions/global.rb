@@ -8,8 +8,6 @@ Given(/^I am on the vega\-homepage$/) do
   visit(homepage)
   current_url.should eq(homepage),
     "Expected the current url to be #{homepage}, but it was #{current_url}"
-  out ENV['MAGENTO_USERNAME']
-  out ENV['MAGENTO_PASSWORD']
 end
 
 Given(/^no user account with my data exists$/) do
