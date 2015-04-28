@@ -1,6 +1,6 @@
 Given(/^I am on the product cart page$/) do
   #1 - initialize variables
-  url = urlHttp+'checkout/cart/'
+  url = settings.urlHttp+'checkout/cart/'
 
   #2 - navigate to product cart
   visit(url)
@@ -111,7 +111,7 @@ end
 
 Then(/^I should be on the checkout\-page$/) do
   #1 - initilalize variables
-  checkout = urlHttps+'checkout/onepage/'
+  checkout = settings.urlHttps+'checkout/onepage/'
 
   #2 - check url
   current_url.should eq(checkout),

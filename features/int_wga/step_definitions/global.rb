@@ -2,7 +2,7 @@
 
 Given(/^I am on the vega\-homepage$/) do
   #1 - initialize variables
-  homepage = urlHttp
+  homepage = settings.urlHttp
 
   #2 - navigate to homepage
   visit(homepage)
@@ -25,8 +25,8 @@ Given(/^I already created an user account$/) do
   #1 - initialize variables
   eMail = user.eMail
   
-  url_logoutSuccess = urlHttps+"customer/account/logoutSuccess/"
-  url_homepage = urlHttp
+  url_logoutSuccess = settings.urlHttps+"customer/account/logoutSuccess/"
+  url_homepage = settings.urlHttp
   button_logout = 'body > div.wrapper > div > div.header-container > div.header > div.header-panel > div > div.footer-links > ul > li.last > a'
 
   if magento.customer_exists(eMail) == false

@@ -1,6 +1,6 @@
 Given(/^I am on the registration page$/) do
   #1 - initialize variables
-  registration = urlHttps+'customer/account/login/'
+  registration = settings.urlHttps+'customer/account/login/'
 
   #2 - navigate to registration
   visit(registration)
@@ -42,7 +42,7 @@ end
 
 Then(/^I should be on my account page$/) do
   #1 - initialize variables
-  url_accountPage = urlHttps+'customer/account/'
+  url_accountPage = settings.urlHttps+'customer/account/'
   
 
   #2 - check url
@@ -63,7 +63,7 @@ When(/^I create an new account with my data$/) do
   city = user.city
   telephone = user.telephone
 
-  url_createAccount = urlHttps+"customer/account/create/"
+  url_createAccount = settings.urlHttps+"customer/account/create/"
   button_createAccount = 'div.new-users > div > button'
   button_sendFormular = '#form-validate > div.buttons-set.form-buttons > button'
 

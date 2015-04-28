@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'cucumber'
+gem 'rails'
 gem "json"
 gem "capybara"
 gem "rspec"

@@ -100,7 +100,7 @@ end
 
 Given(/^I am on the checkout page$/) do
   #1 - initilalize variables
-  checkout = urlHttps+'checkout/onepage/'
+  checkout = settings.urlHttps+'checkout/onepage/'
   
 
   # - navigate to checkout
