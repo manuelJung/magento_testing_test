@@ -26,6 +26,8 @@ end
 World(MyWorld)
 
 
+
+
 class Article
   attr_accessor :sku, :amount, :name, :color, :size, :packagingUnit, :deliveryState, :pricePerPiece, :packContent
   
